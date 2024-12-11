@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz World</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
+    <script src="js/script.js" defer></script> <!-- Script JS -->
+</head>
+
+<body>
+    <h1 class="text-center mt-5">Quizz World</h1>
+
+    <!-- Section des quizz -->
+    <div class="row quiz-container d-flex justify-content-center" id="quizRow1"></div>
+    <div class="row quiz-container d-flex justify-content-center" id="quizRow2"></div>
+
+    <!-- Boîte modale pour le prénom -->
+    <div class="modal fade" id="nameModal" tabindex="-1" aria-labelledby="nameModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="nameModalLabel">Entrez votre prénom</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control" id="userName" placeholder="Votre prénom">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="confirmName">Confirmer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section récapitulative -->
+    <div class="container recap-page d-none">
+        <div class="recap-content"></div>
+        <button class="btn btn-warning" id="startQuiz">Démarrer le quiz</button>
+    </div>
+
+    <!-- Section pour afficher les questions -->
+    <div class="container quiz-page d-none">
+        <h2 class="quiz-title-section text-center"></h2>
+        <div class="question-container">     
+            <p class="question-text"></p>
+            <p class="anecdote mt-3"></p>
+            <div class="row answer-options d-flex justify-content-around"></div>
+            <div class="d-flex align-items-center mt-3">
+                <div class="drop-zone border border-dashed border-primary p-3 flex-fill" style="min-height: 50px; text-align: center;" 
+                    data-placeholder="Posez votre réponse ici !!!">
+                    Posez votre réponse ici !!!
+                </div>
+                <button class="btn btn-warning ml-3  " id="nextQuestion">Suivant</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

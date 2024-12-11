@@ -1,0 +1,108 @@
+body {
+    background-color: rgb(81, 153, 255);
+}
+
+h1 {
+    color: white;
+    font-family: 'Anton SC', sans-serif;
+}
+
+.quiz-container {
+    margin: 20px 0;
+    color: white !important;
+    font-family: Pacifico;
+}
+
+.quiz-item {
+    background-color: rgb(229, 90, 26);
+    border-radius: 8px;
+    box-shadow: 10px 10px 0px #000000;
+    text-align: center;
+    margin: 7px;
+    border : dashed 1px black !important;
+}
+
+.quiz-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.quiz-img {
+    width: 100%;
+    height: auto;
+}
+
+.level-selector {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.modal-header {
+    background-color: #fc930a;
+    color: white;
+}
+
+#nameModal input {
+    margin-top: 10px;
+}
+
+.recap-page {
+    max-width: 600px;
+    text-align: center;
+}
+
+.recap-page img {
+    width: 100%;
+    height: auto;
+}
+
+#startQuiz {
+    margin-top: 20px;
+}
+
+.quiz-page {
+    margin-top: 50px;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.answer-options .answer-option {
+    background-color: rgb(255, 193, 7);
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: grab;
+    border:solid white 2px !important;
+}
+
+.answer-options .answer-option.correct {
+    background-color: rgb(40, 167, 69);
+}
+
+.answer-options .answer-option.incorrect {
+    background-color: rgb(220, 53, 69);
+
+}
+
+.drop-zone {
+    position: relative;
+    border : dashed 3px black !important;
+}
+
+.drop-zone.valid {
+    background-color: rgb(40, 167, 69);
+    color: white;
+    border : dashed 3px black !important;
+}
+
+.drop-zone.invalid {
+    background-color: rgb(220, 53, 69);
+    color: white;
+    border : dashed 3px black !important;
+}
+.anecdote{border-radius: 8px;background-color: orange;font-family: 'Anton SC', sans-serif;color: white;text-align: center;font-size: 20px;}
+
+.btn{  box-shadow: 3px 3px 0px #000000 !important;}
