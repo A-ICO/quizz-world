@@ -106,3 +106,21 @@ h1 {
 .anecdote{border-radius: 8px;background-color: orange;font-family: 'Anton SC', sans-serif;color: white;text-align: center;font-size: 20px;}
 
 .btn{  box-shadow: 3px 3px 0px #000000 !important;}
+
+/* Mode Tablette */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .quiz-item {
+        font-size: 14px; /* Ajuste la taille de la police pour tablette */
+    }
+
+    .level-selector {
+        display: flex;
+        flex-direction: column; /* Met les éléments en colonne */
+        font-size: 14px; /* Ajuste la taille de la police pour les options de difficulté */
+        align-items: center; /* Centre les éléments */
+    }
+
+    .level-selector label {
+        margin: 5px 0; /* Espace entre chaque option */
+    }
+}
