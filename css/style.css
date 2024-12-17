@@ -108,7 +108,7 @@ h1 {
 .btn{  box-shadow: 3px 3px 0px #000000 !important;}
 
 /* Mode Tablette */
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: 1200px) and (min-width: 768px) {
     .quiz-item {
         font-size: 14px; /* Ajuste la taille de la police pour tablette */
     }

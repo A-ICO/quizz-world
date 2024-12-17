@@ -89,6 +89,9 @@ $(document).ready(function () {
             e.preventDefault();
         });
 
+        // Désactiver le bouton "Suivant" au début
+        $("#nextQuestion").hide();
+
         $(".drop-zone").on("drop", function (e) {
             e.preventDefault();
             const answer = e.originalEvent.dataTransfer.getData("text");
@@ -107,6 +110,9 @@ $(document).ready(function () {
 
             $(".answer-option").off("dragstart");
             $(".drop-zone").off("dragover drop");
+
+            // Activer le bouton "Suivant" après avoir répondu
+            $("#nextQuestion").show();
         });
     }
 
